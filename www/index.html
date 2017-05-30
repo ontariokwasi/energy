@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Easy deposit</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="dist/css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <div class="views">
+      <!-- Put panels-overlay and left-panel with view inside of views-->
+      <!-- Panels overlay-->
+      <div class="panel-overlay"></div>
+      <!-- Left panel with reveal effect-->
+      <div class="panel panel-left panel-cover">
+        <!-- Left view-->
+        <div class="view view-left navbar-through">
+          <div class="navbar" id ='pageheader'>
+            <div class="navbar-inner">
+              <div class="left"></div>
+              <div class="center sliding">EasyDepo</div>
+              <div class="right"></div>
+            </div>
+          </div>
+          <div class="pages">
+            <div data-page="index-left" class="page">
+              <div class="page-content">
+               <!-- <div class="content-block-title">Help Menu</div>
+                <div class="list-block">
+                  <ul>
+                    <li><a href="left-page-1.html" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title" >Help1</div>
+                          </div>
+                        </div></a></li>
+                    <li><a href="left-page-2.html" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Help2</div>
+                          </div>
+                        </div></a></li>
+						<li><a href="myeasyac.html" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Help3</div>
+                          </div>
+                        </div></a></li>
+                  </ul>
+                </div>-->
+                <div class="content-block-title" style="color:orange; font-family: serif;">Actions</div>
+                <div class="list-block sidebaractions">
+                  <ul>
+				  <li><a href="" data-view=".view-main" class="item-link close-panel" id='home'>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Home</div>
+                          </div>
+                        </div></a></li>
+						
+						
+						
+                    <li><a href="#signup" data-view=".view-main" class="item-link close-panel">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Edit Profile</div>
+                          </div>
+                        </div></a></li>
+						
+						<li><a href="" data-view=".view-main" class="item-link close-panel" id='home'>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">Bank Account</div>
+                          </div>
+                        </div></a></li>
+                    <!--<li><a href="#login" data-view=".view-main" class="item-link close-panel">
+                        <div class="item-content">
+                          <div class="item-inner">
+						  
+                            <div class="item-title">Login</div>
+                          </div>
+                        </div></a></li> -->
+						<li><a href="left-page-2.html" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title" >Help Menu</div>
+                          </div>
+                        </div></a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar" id='pageheader'>
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">EASY DEPOSIT</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for About page-->
+          <div data-page="about" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">About Us</div>
+          </div>
+		  <div data-page="recharge" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">EASY DEPOSIT</div>
+			<div class="right sliding"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+          </div>
+          <!-- Navbar inner for Services page-->
+          <div data-page="etrans" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">EASY DEPOSIT</div>
+			<div class="right sliding"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+          </div>
+          <!-- Navbar inner for Form page-->
+          <div data-page="signup" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">EASY DEPOSIT</div>
+			<div class="right sliding"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+          </div>
+		  
+		  <div data-page="btrans" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">EASY DEPOSIT</div>
+			<div class="right sliding"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index.html" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title" style="color:orange; font-family: serif;"><b>easyboard</b> <img src="banklogo.png" alt='bank logo' style="width: 20%;border-radius: 30%;margin-left: 60%;" /> </div>
+              <div class="list-block">
+                <ul>
+				<br/>
+                  
+  <li><a href="#btrans" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="button" style='width:100%'>Bank Transfer</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#etrans" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="button" style='width:100%'>Wallet Transfer</div>
+                        </div>
+                      </div></a></li>
+					  <li><a href="#" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="button" style='width:100%'>Pay Utility Bills</div>
+                        </div>
+                      </div></a></li>
+  <li><a href="#recharge" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="button" style='width:100%'>Recharge Wallet</div>
+                        </div>
+  
+    </div></a></li>
+  <li><a href="" class="item-link" id="balance">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="button" style='width:100%'>Check Balance</div>
+                        </div>
+                      </div></a></li>
+  <!--<li><a href="#transhist" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="button" style='width:100%'>Summary Report</div>
+                        </div>
+                      </div></a></li>-->
+					  <li><a href="#signup" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="button"style='width:100%'>Open Xpres Account</div>
+                        </div>
+                      </div></a><br/></li>
+					  
+                </ul>
+              </div><br/>
+			  
+            </div>
+			<div class="" id='pagefooter'>
+               <i><b> Powered By:</b> Easy Deposit GH</i>
+              </div>
+          </div>
+          <!-- Easy transfer-->
+          	  <div data-page="etrans" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">Easy transfer</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+				  <br />
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto;'> Receiver's ID</div>&nbsp
+					  <i class="icon " style='margin-left:0px;'></i>&nbsp
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+                          <input type="text" id="etransrec" placeholder="Recipient's user ID">
+                        </div>
+                      </div>
+                    </div>
+                  </li><br/>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;'>Amount GHC</div>&nbsp
+						<i class="icon "></i>&nbsp
+                        <div class="item-input">
+                          <input type="number" id="etransamt" placeholder="Amount to be transfered">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <input type="submit" value="Send" id="etransbtn" class="button" style='background:#e1b223; width:40%; position:center;'>
+                  </div>
+				  </center>
+				  </li>
+                  <br />
+                  
+                </ul>
+              </div>
+            
+            </div>
+			<div class="" id='pagefooter'>
+            <i><b> Powered By:</b> Easy Deposit GH</i>
+             </div>
+          </div>
+          <!-- Recharge Page-->
+		  
+          <div data-page="recharge" class="page cached">
+            <div class="page-content">
+              <!--<div class="content-block">
+                ----------------->
+		  
+              <div class="content-block-title">Recharge Account</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+				  <br />
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto;'>Recharge Pin</div>&nbsp
+					  <i class="icon " style='margin-left:0px;'></i>&nbsp
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+                          <input type="number" placeholder="Enter recharge pin" id='rechargepin'>
+                        </div>
+                      </div>
+                    </div>
+                  </li><br/>
+				  <!--<li>
+                    <label class="item-content">
+                      <input type="checkbox" name="re-check" >
+                      <div class="item-inner">
+                        <div class="item-title">Recharge a different account</div>
+                      </div>
+                    </label>
+                  </li><br />-->
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;'>Account ID</div>&nbsp
+						<i class="icon "></i>&nbsp
+                        <div class="item-input">
+                          <input type="text" placeholder="User ID" id="uid">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <br>
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <input type="submit" value="Recharge" class="button" style='background:#e1b223; width:40%; position:center;' id='rechargebtn'>
+                  </div>
+				  </center>
+				  </li>
+                  <br />
+                  
+                </ul>
+              </div>
+            
+			
+          </div>
+		  <div  id='pagefooter'>
+            <i><b> Powered By:</b> Easy Deposit GH</i>
+            </div>
+				</div>
+				<!------check balance----------->
+				<div data-page="balance" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                
+		  
+              <div class="content-block-title">Account Balance</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      
+                        <div class="item-title label button" style='width:auto;'disabled>User ID</div>&nbsp
+						<i class="icon "></i>&nbsp&nbsp&nbsp
+						<div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" value="easydepo" disabled>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      
+                        <div class="item-title label button" style='width:auto;'disabled>Amount</div>&nbsp
+						<i class="icon "></i>&nbsp&nbsp&nbsp
+						<div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" value="GHC 0.00" disabled>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      
+                        <div class="item-title label " style='width:auto; border:0px'>Last Recharge:</div>
+						<div class="item-input">
+                          <input type="text" value="2016-09-20 13:00:05" disabled style='color:blue;'>
+                        </div>
+                      
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <!--<input type="submit" value="Recharge" class="button" style='background:#e1b223; width:40%; position:center;'> -->
+					<a href="#" class="back link button" style='background:#e1b223; width:30%; position:center;'> <i class="icon icon-back"></i><span>Back</span></a>
+                  </div>
+				  </center>
+				  </li>
+                  <br />
+                  
+                </ul>
+              </div>
+              
+           
+            </div>
+			<div class="" id='pagefooter'>
+              <i><b> Powered By:</b> Easy Deposit GH</i>
+              </div>
+          </div>
+				</div>
+				
+				<!------transaction history----------->
+				<div data-page="transhist" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                
+		  
+              <div class="content-block-title">Summary Report</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+						<div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;'disabled>Period</div>&nbsp
+						<i class="icon "></i>&nbsp&nbsp
+						
+                        <div class="item-input">
+                          <input type="date" value="" style='color:#007aff;' id='period'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  
+				  
+				  Here you are, <br/>find below a summary of your transactions for the specified period.
+				  <br/>You can check for specific dates by selecting a date above.
+				  
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                       <div class="item-inner"> 
+                        <div class="item-title label " style='width:auto;'  >Top ups:</div>&nbsp
+						<i class="icon "></i>&nbsp&nbsp&nbsp
+						
+                        <div class="item-input">
+                          <input type="text" value="GHC 0.00" disabled style='color:blue;' id='topups'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label " style='width:auto;'>Cash-In:</div>&nbsp &nbsp
+                        <div class="item-input">
+                          <input type="text" value="GHC 00.00" disabled style='color:blue;' id="cashin">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label " style='width:auto;'>Cash-Out:</div>&nbsp
+                        <div class="item-input">
+                          <input type="text" value="GHC 00.00" disabled style='color:blue;' id='cashout'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <!--<input type="submit" value="Recharge" class="button" style='background:#e1b223; width:40%; position:center;'> -->
+					<a href="#" class="back link button" style='background:#e1b223; width:30%; position:center;'> <i class="icon icon-back"></i><span>Back</span></a>
+                  </div>
+				  </center>
+				  </li>
+                  <br />
+                 
+                </ul>
+              </div>
+             </div>
+			<div class="" id='pagefooter'>
+            <i><b> Powered By:</b> Easy Deposit GH</i>
+             </div>
+          </div>
+				</div>
+            
+          <!-- Form Page-->
+          <div data-page="form" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">Form Example</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-name"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Name</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Your name">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-email"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">E-mail</div>
+                        <div class="item-input">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-url"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">URL</div>
+                        <div class="item-input">
+                          <input type="url" placeholder="URL">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-password"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Password</div>
+                        <div class="item-input">
+                          <input type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Phone</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Phone">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Gender</div>
+                        <div class="item-input">
+                          <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Birth date</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2014-04-30">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Switch</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-settings"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Slider</div>
+                        <div class="item-input">
+                          <div class="range-slider">
+                            <input type="range" min="0" max="100" value="50" step="0.1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner"> 
+                        <div class="item-title label">Textarea</div>
+                        <div class="item-input">
+                          <textarea></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" class="button button-big button-fill color-red">Cancel</a></div>
+                  <div class="col-50">
+                    <input type="submit" value="Submit" class="button button-big button-fill color-green">
+                  </div>
+                </div>
+              </div>
+              <div class="content-block-title">Checkbox group</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Books" checked>
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Books</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Movies">
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Movies</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Food">
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Food</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Drinks">
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Drinks</div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">Radio buttons group</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Books" checked>
+                      <div class="item-inner">
+                        <div class="item-title">Books</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Movies">
+                      <div class="item-inner">
+                        <div class="item-title">Movies</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Food">
+                      <div class="item-inner">
+                        <div class="item-title">Food</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Drinks">
+                      <div class="item-inner">
+                        <div class="item-title">Drinks</div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+		  <!----------signup-------------->
+		  <div data-page="signup" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">signup</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+				  <br />
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto;'> Fullname</div> &nbsp
+					  <i class="icon icon-form-name" style='margin-left:0px;'></i>&nbsp
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+                          <input type="text" placeholder="Enter your fullname" id='rfname' required >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <li>
+				  <br />
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto;'> User ID</div>&nbsp &nbsp
+					  <i class="icon icon-form-name" style='margin-left:0px;'></i>&nbsp
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+                          <input type="text" placeholder="Enter User ID" id='ruid'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <li>
+				  <br />
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto;'> Phone No</div> &nbsp
+					  <i class="icon icon-form-tel" style='margin-left:0px;'></i>&nbsp
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+                          <input type="tel" placeholder="Enter your mobile number" id='rphone'>
+                        </div>
+                      </div>
+                    </div>
+                  </li><br/>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;'>Password</div>&nbsp
+						<i class="icon icon-form-password"></i>&nbsp
+                        <div class="item-input">
+                          <input type="password" placeholder="enter 4 digits pin" id='rpassword' >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <input type="submit" value="SignUp" id='signup' class="button" style='background:#e1b223; width:40%; position:center;'>
+                  </div>
+				  </center>
+				  </li>
+                  <br />
+                  
+                </ul>
+              </div>
+              
+           
+            </div>
+			<div class="" id='pagefooter'>
+             <i><b> Powered By:</b> Easy Deposit GH</i>
+              </div>
+          </div>
+		  <!--------login--------->
+		  <div data-page="login" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">Login</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+				  <br />
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto;'> User ID</div>&nbsp &nbsp
+					  <i class="icon icon-form-name" style='margin-left:0px;'></i>&nbsp
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+                          <input type="text" placeholder="Enter User ID">
+                        </div>
+                      </div>
+                    </div>
+                  </li><br/>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;'>Password</div>&nbsp
+						<i class="icon icon-form-password"></i>&nbsp
+                        <div class="item-input">
+                          <input type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <br>
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <input type="submit" value="Login" class="button" style='background:#e1b223; width:40%; position:center;'>
+                  </div>
+				  </center>
+				  </li>
+                  <br />
+                  
+                </ul>
+              </div>
+              
+           
+            </div>
+			<div class="" id='pagefooter'>
+             <i><b> Powered By:</b> Easy Deposit GH</i>
+              </div>
+          </div>
+		  
+		  <!--------Bank transfer--------->
+		  <div data-page="btrans" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title" style='height:auto; top:0px;'>Bank Details</div>
+              <div class="list-block">
+                <ul class='button' style='height:auto;'>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-email"></i></div>&nbsp-->
+                      <div class="item-title label button" style='width:auto; border:0px'> <b>Bank Name:</b></div>&nbsp
+					  <!--<i class="icon icon-form-name" style='margin-left:0px;'></i>&nbsp--->
+					  <div class="item-inner"> 
+                        
+                        <div class="item-input ">
+						<select id='bankname'>
+						  <option>Energy Bank</option>
+						  </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      
+                        <div class="item-title label button" style='width:auto;border:0px'><b>Bank Branch:</b></div>&nbsp
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+						<div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" placeholder="Bank's branch" id='bankbranch'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      
+                        <div class="item-title label button" style='width:auto; border:0px'><b>Accnt Name:</b></div>&nbsp &nbsp
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+						<div class="item-inner"> 
+                        <div class="item-input">
+                          <input type="text" placeholder="Account holder's name" id='accname'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <li>
+                    <div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner">
+                        <div class="item-title label button" style='width:auto; border:0px'><b>Accnt Number:</b></div>
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+						 
+                        <div class="item-input">
+                          <input type="number" placeholder="Account Number" id='accno'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+				  <div class="item-content" style='height:auto; top:0px; color:#e1b223'><b>Transfer Mode:</b></div>
+				  <li>
+                    <label class=" item-content">
+                      <input type="radio" name="ks-radio" value="Scratchcrd" checked id='rech' onchange='radios(this.id)'>
+                      <div class="item-inner">
+					  
+                        <div class="item-title">Use Easy Recharge Card</div>
+						
+                      </div>
+                    </label>
+					<div class="item-content" id='useCard'>
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto; border:0px'><b>Card No.</b></div>&nbsp
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+                        <div class="item-input">
+                          <input type="number" placeholder="Enter recharge pin" id='rechamt'>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label class="item-content">
+                      <input type="radio" name="ks-radio" value="Easy acc" style='background:#007aff;' id='myacc' onchange='radios(this.id)'>
+                      <div class="item-inner">
+                        <div class="item-title">Transfer from MyEasy Account</div>
+                      </div>
+                    </label>
+					<div id='fromacc'>
+					<div class="item-content" >
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;border:0px'><b>User ID:</b></div>&nbsp
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+                        <div class="item-input">
+                          <input type="text" placeholder="  Enter your easy user ID" disabled id='myaccid'>
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;border:0px'><b>Password:</b></div>&nbsp
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+                        <div class="item-input">
+                          <input type="password" placeholder="Enter account password" disabled id='myaccpass'>
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-content">
+                      <!--<div class="item-media"><i class="icon icon-form-password"></i></div>-->
+                      <div class="item-inner"> 
+                        <div class="item-title label button" style='width:auto;border:0px'><b>Amount GHC:</b></div>&nbsp
+						<!--<i class="icon icon-form-password"></i>&nbsp-->
+                        <div class="item-input">
+                          <input type="number" placeholder="Enter transfer amount" disabled id='myaccamt'>
+                        </div>
+                      </div>
+                    </div>
+					</div>
+                  </li><br />
+				  <li>
+				  <center>
+				  <div class="col-50">
+                    <input type="submit" value="Send" class="button" style='background:#e1b223; width:40%; position:center;' id ='transfer'>
+                    </div>
+				  </center>
+				  </li>
+				  <br />
+                </ul>
+              </div>
+              
+			  
+           
+              
+              
+			  
+			  
+            </div>
+			<div id='pagefooter'>
+               <i id='pagefooter'><b> Powered By:</b> Easy Deposit GH</i>
+              </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link"></a><a href="#" class="link">Link 2</a></div>
+        </div>-->
+      </div>
+    </div>
+	<style >
+#pagefooter{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	text-align:center;
+	padding:1rem;
+	color:#efefef;
+	background:#e1b223;
+	height:5px;
+}
+#pageheader{
+	position:fixed;
+	top:0px;
+	right:0px;
+	left:0px;
+	text-align:center;
+	padding:1rem;
+	color:#efefef;
+	background:#e1b223;
+}
+</style>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="dist/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+<script>
+	var mode = '';
+	$$("#signup").click(function(){
+	var fullname = $$("#rfname").val();
+	var userid = $$("#ruid").val();
+	var phone = $$("#rphone").val();
+	var password = $$("#rpassword").val();
+	if(fullname=='' || userid=='' || phone=='' || password==''){
+	myApp.alert('All fields are required','ERROR..!');
+	}else{
+	$$.post("http://api.nalosolutions.com/apsgear/core/signup.php",{
+	register: "register",
+	fullname: fullname,
+	userid: userid,
+	phone: phone,
+	password: password
+	},
+	function(data, status){
+	console.log(data);
+		if(data == 'You have been succefully registered'){
+		myApp.alert(data,"<div style='color:green;'>Success :-)</div>");
+		$$("#rfname").val(null);
+		$$("#rpassword").val(null);
+		$$("#ruid").val(null);
+		$$("#rphone").val(null);
+	   //location.reload();
+	}else if(data=='exists'){myApp.alert("User ID already exist!","<div style='color:red;'>oops!</div>")}
+	else{myApp.alert("SignUp Failed! Please try again.","<div style='color:red;'>oops!</div>");}
+    });
+	//window.alert('goodwork');
+	
+	 //;
+	}
+	});
+	 /*myApp.addNotification({
+              title: 'My Awesome App',
+              subtitle: 'New message from John Doe',
+              message: 'Hello, how are you? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut posuere erat. Pellentesque id elementum urna, a aliquam ante. Donec vitae volutpat orci. Aliquam sed molestie risus, quis tincidunt dui.',
+              media: '<img width="44" height="44" style="border-radius:100%" src="http://lorempixel.com/output/people-q-c-100-100-9.jpg">',
+              onClose: function () {
+                  myApp.alert('Notification closed', 'welcome');
+              }
+          });*/
+		  
+	$$("#transfer").click(function(){
+	var bankname = $$("#bankname").val();
+	var bankbranch = $$("#bankbranch").val();
+	var accname = $$("#accname").val();
+	var accno = $$("#accno").val();
+	var pin='';
+	var amount = '';
+	var myaccpass = '';
+	var myaccid = '';
+	var check = '';
+	if(mode=='myacc'){
+	amount = $$('#myaccamt').val();
+	myaccid = $$('#myaccid').val();
+	myaccpass = $$('#myaccpass').val();
+	pin = 'no';
+	if(myaccid=='' || myaccpass=='' || amount=='' || bankname=='' || bankbranch=='' || accno=='' || accname==''){
+	myApp.alert('All fields are required','ERROR..!');
+	check = 'failed';
+	}else{check='pass';}
+	}else{
+	pin = $$('#rechamt').val();
+	amount = 'no';
+	myaccid = 'n/a';
+	myaccpass = 'n/a';
+	if(bankname=='' || bankbranch=='' || accno=='' || accname=='' || pin==''){
+	if(pin==''){
+	myApp.alert('Enter Recharge pin ','ERROR..!');
+	}
+	myApp.alert('All fields are required','ERROR..!');
+	check = 'failed';
+	}else{check = 'pass';}
+	}
+	//myApp.alert(amount+" "+myaccid+" "+myaccpass);
+	if(check == 'pass'){
+	//myApp.alert('All fields are required','ERROR..!');
+	//console.log(bankname+"_"+bankbranch+"_"+accname+"_"+accno+"_"+pin+userid+"_"+password+"_"+amount);
+	myApp.showPreloader('checking balance');
+	$$.post("http://api.nalosolutions.com/apsgear/core/transfer.php",{
+	transfer: "transfer",
+	bankname: bankname,
+	bankbranch: bankbranch,
+	accname: accname,
+	accno: accno,
+	pin: pin,
+	userid: myaccid,
+	password: myaccpass,
+	amount: amount
+	},
+	function(data, status){
+	var resp = data.split("|");
+	var res = resp[0];
+	var bal = resp[1];
+	amount = resp[2];
+	var transid = resp[3];
+	var info='';
+	var person='';
+	//if(pin=='no'){
+	person = accname;
+	//info = "You have initiated a transfer of GHC "+amount+ " to "+person+"<br/> Press <b>OK</b> to confirm or <b>Cancel</b> to stop.";
+	//}else{person = accname;
+	info = "You have initiated a transfer of GHC "+amount+ " to "+person+"<br/>Bank: "+bankname+"<br/>Branch: "+bankbranch+"<br/>Acc. No.: "+accno+"<br/> Press <b>OK</b> to confirm or <b>Cancel</b> to stop.";
+	//}
+	if(res == 'stageone'){
+	   //location.reload();
+	   myApp.hidePreloader();
+	   myApp.confirm(info, 'Confirm', 
+      function () {
+	  myApp.showPreloader();
+	  $$.post("http://api.nalosolutions.com/apsgear/core/transfer.php",{
+		confirm: "confirm",
+		pin: pin,
+		userid: myaccid,
+		bal: bal,
+		transid: transid
+	},
+	function(data, status){
+	if(data=='transpass'){
+	myApp.alert("An amount of GHC "+amount+".00 has been tranfered to "+person+".<br /> Thank You for using EasyDepo!","<div style='color:green;'>Success :-)</div>");
+	$$("#bankname").val(null);
+	$$("#bankbranch").val(null);
+	$$("#accname").val(null);
+	$$("#myaccamt").val(null);
+	$$("#myaccid").val(null);
+	$$("#myaccpass").val(null);
+	$$("#rechamt").val(null);
+	$$("#accno").val(null);
+	//location.reload();
+	}else{
+	myApp.alert("Transfer failed! Please try again.","<div style='color:red;'>oops!</div>");
+	}
+	});
+	},
+      function () {
+        myApp.alert('Your transfer has been Cancelled',"Stopped!");
+		//location.reload();
+      }
+    );
+            
+	}else if(data=='Invalid recharge pin'){
+	myApp.alert(data,"<div style='color:red;'>oops!</div>");
+	}
+	else{
+     myApp.alert("Transfer Failed! Please try again.","<div style='color:red;'>oops!</div>");
+		//console.log(data);
+		}
+		});
+	//window.alert('goodwork');
+	
+	 //;
+	/* var con = myApp.confirm('Starting Page','MyEasy');
+	if(con == true){
+	//myApp.alert('Correct Answer','Results');
+	}
+	else{
+	//myApp.alert(confirm,'Results');
+	}*/
+	}
+	else{}
+	}
+	);
+	
+	$$('#etransbtn').on('click', function () {
+	var receiver = $$("#etransrec").val();
+	var transamt = $$("#etransamt").val();
+	if(receiver==""){
+	myApp.alert("Please enter recipient's user ID","<div style='color:red;'>oops!</div>");
+	}
+	else if(transamt==""){
+	myApp.alert("Please enter amount to be transfered","<div style='color:red;'>oops!</div>");
+	}else{
+    myApp.modalLogin('Please enter your username (user ID) and password to continue.', "<div style='color:#e1b223;'>Authentication</div>",function (username, password) {
+	$$.post("http://api.nalosolutions.com/apsgear/core/transfer.php",{
+		etrans: "etrans",
+		receiver: receiver,
+		transamt: transamt,
+		sender: username,
+		password: password
+	},
+	function(data, status){
+	var resp = data.split("|");
+	var res = resp[0];
+	var bal = resp[1];
+	if(res=='transpass'){
+	myApp.alert("You have succefully tranfered an amount of GHC "+transamt+" to "+receiver+". Your remaining balance is GHC "+bal,"<div style='color:green;'>Success :-)</div>");
+	$$("#etransrec").val(null);
+	$$("#etransamt").val(null);
+	}else if(res=="No recipient"){myApp.alert("Recipient's ID does not exist","<div style='color:red;'>Failed!</div>");}
+	else if(res=="No sender"){myApp.alert("The userID or password is invalid","<div style='color:red;'>Failed!</div>");}
+	else if(res=="low balance"){myApp.alert("you don't have enough balance to perform this transaction","<div style='color:red;'>Failed!</div>");}
+	else{myApp.alert("Something happened, please try again","<div style='color:red;'>oops!</div>");}
+        
+		});
+    });
+	}
+});
+
+	$$('#rechargebtn').on('click', function () {
+	var rechargepin = $$("#rechargepin").val();
+	var uid = $$("#uid").val();
+	if(rechargepin==""){
+	myApp.alert("Please enter recharge pin","<div style='color:red;'>oops!</div>");
+	}else if(uid==""){	myApp.alert("Please enter a valid User ID","<div style='color:red;'>oops!</div>");}
+	else{
+	myApp.showPreloader("<div style='color:brown;'> Wait..</div>");
+	$$.post("http://api.nalosolutions.com/apsgear/core/recharge.php",{
+		recharge: "rcharge",
+		rechargepin: rechargepin,
+		uid: uid,
+		},
+	function(data, status){
+	myApp.hidePreloader();
+	var resp = data.split("|");
+	var res = resp[0];
+	var rechargeamt = resp[1];
+	if(res=='transpass'){
+	myApp.alert("You have succefully recharged an amount of GHC "+rechargeamt+" for account ID "+uid+". <br/><br/>Thank you for using EasyDepo.","<div style='color:green;'>Success :-)</div>");
+	$$("#uid").val(null);
+	$$("#rechargepin").val(null);
+	}else if(res=="no uid"){myApp.alert("The account ID or (User ID) you entered is invalid please check and try again","<div style='color:red;'>Failed!</div>");}
+	else if(res=="invalid pin"){myApp.alert("Invalid recharge pin","<div style='color:red;'>Failed!</div>");}
+	//else if(res=="low balance"){myApp.alert("you don't have enough balance to perform this transaction","<div style='color:red;'>Failed!</div>");}
+	else{myApp.alert("Something happened, please try again","<div style='color:red;'>oops!</div>");}
+		});
+	}
+	});
+	$$('#balance').on('click', function () {
+	myApp.modalLogin('Please enter your username (user ID) and password to continue.', "<div style='color:#e1b223;'>Authentication</div>",function (username, password) {
+	myApp.showPreloader("<div style='color:brown;'> Wait..</div>");
+	$$.post("http://api.nalosolutions.com/apsgear/core/balance.php",{
+		balance: "balance",
+		uid: username,
+		password: password
+	},
+	function(data, status){
+	var resp = data.split("|");
+	var res = resp[0];
+	var bal = resp[1];
+	if(res=='transpass'){
+	myApp.alert("Your remaining balance is GHC "+bal,"<strong><div style='color:green;'>"+username+"</div></strong>");
+	}else if(res=="invalid user"){myApp.alert("The UserID or password is invalid","<div style='color:red;'>Failed!</div>");}
+	else{myApp.alert("Something happened, please try again","<div style='color:red;'>oops!</div>");}
+        
+		});
+    });
+	});
+	//hide transfer from acc
+		$$("#fromacc").hide();
+	//................///
+	$$("#home").click(function(){location.reload();});
+		function radios(id){
+		mode = id;
+		//myApp.alert(id+'amt');
+		document.getElementById(id+'amt').disabled = false;
+		if(id == 'myacc'){
+		//hide rechargepin request
+		$$("#useCard").hide();
+		//show transfer from acc
+		$$("#fromacc").show();
+		document.getElementById(id+'id').disabled = false;
+		document.getElementById(id+'pass').disabled = false;
+		$$("#rechamt").val(null);
+		id = 'rech';
+		}else{
+		$$("#useCard").show();
+		//hide transfer from acc
+		$$("#fromacc").hide();
+		$$("#myaccamt").val(null);
+		$$("#myaccid").val(null);
+		$$("#myaccpass").val(null);
+		id = 'myacc';
+		}
+		document.getElementById(id+'amt').disabled = true;
+		document.getElementById(id+'pass').disabled = true;
+		document.getElementById(id+'id').disabled = true;
+		
+		}		  
+	</script>
+	
+	  <style>
+    .col-25 {
+      padding:5px;
+      text-align:center;
+    }
+    .col-dark {
+      background:#222;
+    }
+  </style>
+</html>
